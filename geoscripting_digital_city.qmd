@@ -1,0 +1,377 @@
+---
+title: "Creating an (immersive) digital city"
+subtitle: "Geoinformation tools - WUR 2023"
+author: "Sebastián Garzón"
+orcid: 0000-0002-8335-9312
+date: "`r Sys.Date()`"
+format: revealjs
+---
+
+## Immersive city - Demo
+
+### A-frame
+
+```{=html}
+<iframe width="100%" height="80%" src="https://pale-humorous-air.glitch.me/" title="Quarto Documentation"></iframe>
+```
+## Earth's submarine fiber optic
+
+```{=html}
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">New <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a>! The Earth&#39;s submarine fiber optic cable network, visualized in <a href="https://twitter.com/hashtag/RStats?src=hash&amp;ref_src=twsrc%5Etfw">#RStats</a> with <a href="https://twitter.com/hashtag/rayrender?src=hash&amp;ref_src=twsrc%5Etfw">#rayrender</a>. <br><br>Code:<a href="https://t.co/6tFsS4vfAK">https://t.co/6tFsS4vfAK</a><br><br>Rayrender Github:<a href="https://t.co/iB5nWhGY7l">https://t.co/iB5nWhGY7l</a> <a href="https://t.co/1FTKM0FPHr">pic.twitter.com/1FTKM0FPHr</a></p>&mdash; Tyler Morgan-Wall (tylermorganwall at fosstodon) (@tylermorganwall) <a href="https://twitter.com/tylermorganwall/status/1440669533157556227?ref_src=twsrc%5Etfw">September 22, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+## Earth's submarine fiber optic (2)
+
+```{=html}
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Video version <a href="https://twitter.com/hashtag/Earth?src=hash&amp;ref_src=twsrc%5Etfw">#Earth</a>. Submarine Cables <a href="https://twitter.com/hashtag/network?src=hash&amp;ref_src=twsrc%5Etfw">#network</a> <a href="https://twitter.com/hashtag/3d?src=hash&amp;ref_src=twsrc%5Etfw">#3d</a> <a href="https://twitter.com/hashtag/vis?src=hash&amp;ref_src=twsrc%5Etfw">#vis</a> done with <a href="https://twitter.com/MakiePlots?ref_src=twsrc%5Etfw">@MakiePlots</a> (GeoMakie.jl) and the <a href="https://twitter.com/JuliaLanguage?ref_src=twsrc%5Etfw">@JuliaLanguage</a><br> <a href="https://twitter.com/hashtag/julialang?src=hash&amp;ref_src=twsrc%5Etfw">#julialang</a>. Data taken from <a href="https://twitter.com/hashtag/code?src=hash&amp;ref_src=twsrc%5Etfw">#code</a> <a href="https://twitter.com/hashtag/programming?src=hash&amp;ref_src=twsrc%5Etfw">#programming</a> <a href="https://t.co/N5LvKknWUw">https://t.co/N5LvKknWUw</a> <a href="https://t.co/OBGH3wyGXs">pic.twitter.com/OBGH3wyGXs</a></p>&mdash; Lazaro Alonso (@LazarusAlon) <a href="https://twitter.com/LazarusAlon/status/1439561409872945153?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+```
+## {Rayshader}
+
+::: columns
+::: {.column width="50%"}
+!["Rayshader is an **open source** package for producing **2D and 3D data visualizations** in **R**. Rayshader uses elevation data in a base R matrix and a combination of raytracing, hillshading algorithms, and overlays to generate stunning 2D and 3D maps."](https://www.rayshader.com/reference/figures/smallhobart.gif){width="50%" height="50%"}
+:::
+
+::: {.column width="50%"}
+{{< video https://youtu.be/8NV5MxcaWR4 title="Rayshader-Tyler Morgan Wall" width="450" height="450">}}
+
+Source: [Tyler Morgan-Wall](https://fosstodon.org/@tylermorganwall) / [Website](https://www.tylermw.com/)
+:::
+:::
+
+## 3D visualisations (1)
+
+![Nederstigt et al.](photos/Gaia_photo1.jpg){#fig-gaia1 alt="Nederstigt et al." width="70%"} 📍 (Gaia 3rd floor)
+
+## 3D visualisations (2)
+
+![Nederrstigt et al.](photos/Gaia_photo2.jpg){#fig-gaiadetail width="70%"} 📍 (Gaia 3rd floor)
+
+## 3D visualisations (3)
+
+![Institut géographique national](photos/Gaia_photo3.jpg){#fig-gaiamontblanc alt="Institut géographique national" width="70%"}
+
+📍 (Gaia 3rd floor)
+
+## 3D visualisations (4)
+
+{{< video https://user-images.githubusercontent.com/113186599/253793801-4e080294-4ca0-4454-a3b9-72d24d3ee672.mp4 width="500px">}}
+
+## Creating an immersive (dutch) city using R
+
+::: columns
+::: {.column width="50%"}
+-   [ ] Terrain
+-   [ ] Buildings
+-   [ ] Roads
+-   [ ] Trees
+:::
+
+::: {.column width="50%"}
+::: {#fig-opensources}
+![OpenTopography](https://opentopography.org/sites/opentopography.org/files/ot_transp_logo_2.png){#fig-opentopo width="200"} ![3dbag.nl](https://3d.bk.tudelft.nl/logo/logo-url-white.svg){#fig-3dbag width="350"} ![OpenStreetMap](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/256px-Openstreetmap_logo.svg.png?20220919103849){#fig-osm width="100"} ![AHN](https://cuatro.sim-cdn.nl/ahn/uploads/2023-03/wsh-logo-actueel-hoogtebestand-nederland2.svg?cb=YoiFkNq_){#fig-ahn width="200"}
+
+Open source datasets
+:::
+:::
+:::
+
+## Terrain + Buildings
+
+```{r}
+#| echo: true
+#| code-fold: true
+          
+          #### STEP 0 - Loading the packages ####
+          library(sf) # simple features packages for handling vector GIS data
+          library(httr) # generic webservice package
+          library(tidyverse) # a suite of packages for data wrangling, transformation, plotting, ...
+          library(ows4R) # interface for OGC webservices
+          library(osmdata) # interface to access to Open street map data
+          library(dplyr)
+          library(rayrender)  # 3D visualizations using R
+          library(elevatr) # interface to access elevation data
+          library(rayshader)  # 3D visualizations using R
+          library(raster) # Package to manipulate rasters
+          library(lidR) # Package to manipulate lidar data
+          library(rgl) # Package to create 3D interactive graphics
+          library(rgdal) # Geospatial data
+          
+          # Define central point
+          
+          central_point = c(5.664740537573191,51.98513909689059)
+          
+          central_point|> 
+            st_point() |> 
+            st_sfc(crs = 4326) |> 
+            st_transform(st_crs("EPSG:28992")) ->
+            central_point
+          
+          # Define area of interest (Buffer around central point)
+          aoi_distance = units::as_units(400,"m")
+          
+          aoi_buffer = st_buffer(central_point,aoi_distance)
+          aoi_bbox <- st_bbox(aoi_buffer)
+          bbox_string = paste(aoi_bbox[1],aoi_bbox[2],aoi_bbox[3],aoi_bbox[4],sep = ",")
+          
+          # Download 3dBag from the area:
+          
+          wfs_3dbag <- "https://data.3dbag.nl/api/BAG3D_v2/wfs"
+          wfs_3dbag_client <- WFSClient$new(wfs_3dbag, 
+                                            serviceVersion = "2.0.0")
+          
+          url <- parse_url(wfs_3dbag)
+          url$query <- list(service = "wfs",
+                            version = "2.0.0", 
+                            request = "GetFeature",
+                            typename = "bag_tiles_3k",
+                            bbox = bbox_string,
+                            srsName = "EPSG:28992",
+                            outputFormat = "gml32"
+          )
+          
+          # Get tiles to download
+          request <- build_url(url)
+          tiles_3d_aoi <- read_sf(request) 
+          
+          # Download files
+          
+          folder_download <- "data_nl_3dbag"
+          dir.create(folder_download)
+          
+          # Downloads all tiles in the area 
+          buildings <- lapply(tiles_3d_aoi$tile_id, function(x){
+            file_name <- paste0("3dbag_v210908_fd2cee53_",x,".gpkg")
+            url_download <- paste0("https://data.3dbag.nl/gpkg/v210908_fd2cee53/",file_name)
+            GET(url_download, write_disk(file.path(folder_download,file_name),overwrite = TRUE))
+            st_read(file.path(folder_download,file_name),layer = "lod22_3d", quiet=TRUE)
+          }
+          )
+          
+          # Merges all buildings into a single element
+          # This only works because all files are using the same Coordinate reference system !!!
+          city_buildings <- do.call(rbind,buildings)
+          
+          # Change the name of the geometry [Dutch to English... (sorry)]
+          st_geometry(city_buildings)<-"geometry"
+          city_buildings|> st_transform(st_crs(central_point)) -> city_buildings
+          
+          
+          # Select only the buildings within the area of interests
+          city_buildings |> 
+            # Defines centroid of each bulding
+            mutate(centroid = st_centroid(geometry)) |> 
+            # Computes distance to central point
+            mutate(dist = st_distance(centroid, central_point)) |> 
+            # Selects buildings within the AIO
+            filter(dist < aoi_distance) -> city_buildings_aoi
+          
+          # Loading the elevation raster
+          
+          elevation_data = elevatr::get_elev_raster(
+            locations = st_buffer(st_centroid(st_union(city_buildings_aoi)),
+                                  dist=aoi_distance),z=14)
+          
+          #Get the bounding box for the scene
+          scene_bbox = st_bbox(city_buildings_aoi)
+          
+          #Crop the elevation data to that bounding box
+          cropped_data = raster::crop(elevation_data, scene_bbox)
+          
+          # Create a matrix from the elevation
+          elevation_matrix = raster_to_matrix(cropped_data)
+          
+          # Render
+          elevation_matrix %>% 
+            height_shade() %>%
+            plot_3d(elevation_matrix,baseshape = "rectangle")
+          render_multipolygonz(city_buildings_aoi, 
+                               extent = raster::extent(cropped_data),
+                               baseshape = "rectangle",
+                               clear_previous = TRUE,color = "grey",offset = 0,zscale = 1,
+                               heightmap = elevation_matrix)
+          
+          rglwidget()
+          
+```
+
+## Terrain + Buildings + Roads
+
+```{r}
+#| echo: true
+#| code-fold: true
+          
+          #### STEP 4 - Downloading vector data ####
+          #---- START STEP 4 ----#
+          
+          # Map data
+          # Creating a bbox (wgs84)
+          aoi_buffer |>st_transform(st_crs(4326)) |> st_bbox() -> bbox_4326
+          
+          # Downloading roads from Open Street Map
+          
+          roads <- opq(bbox_4326)%>% add_osm_feature("highway")%>% osmdata_sf()
+          roads_lines <- st_transform(roads$osm_lines,crs=crs(central_point)) %>% st_crop(st_buffer(central_point, dist=aoi_distance))
+          
+          # Creating subsets with different types of roads 
+          
+          main_roads = roads_lines %>% 
+            filter(highway %in% c("primary"))
+          
+          trails = roads_lines %>% 
+            filter(highway %in% c("path","bridleway"))
+          
+          footpaths = roads_lines %>%  filter(highway %in% c("footway"))
+          
+          city_roads = roads_lines %>% 
+            filter(highway %in% c("unclassified", "secondary", "tertiary", "residential", "service","busway","living_street"))
+          
+          #---- END STEP 4 ----#
+          
+          #### STEP 5 - Plotting the visualization  ####
+          
+          elevation_matrix %>% 
+            height_shade() %>% 
+            # adding the footpaths
+            add_overlay(generate_line_overlay(footpaths ,extent = extent(cropped_data), heightmap = elevation_matrix,linewidth = 1, color="orange"), alphalayer = 1)%>% 
+            # adding city roads
+            add_overlay(generate_line_overlay(city_roads ,extent = extent(cropped_data), heightmap = elevation_matrix,linewidth = 2, color="black"), alphalayer = 1) %>%
+            # Plotting the surface 
+            plot_3d(elevation_matrix)
+          # Plotting buildings (again...)
+          render_multipolygonz(city_buildings_aoi, 
+                               extent = raster::extent(cropped_data),
+                               baseshape = "rectangle",
+                               clear_previous = TRUE,color = "grey",offset = 0,zscale = 1,
+                               heightmap = elevation_matrix)
+          rglwidget()
+```
+
+## Terrain+Buildings+Roads+Trees
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| warning: false
+          
+          #Load GeotilesNL tiles (https://weblog.fwrite.org/kaartbladen/)
+          tiles_geotiles <- st_read(file.path("data_nl","AHN_subunits_GeoTiles.shp"), quiet = TRUE)
+          
+          #Check intersection
+          tiles_inter <- st_intersects(aoi_buffer,tiles_geotiles)
+          tiles_code_AHNSUB <- tiles_geotiles$GT_AHNSUB[tiles_inter[[1]]]
+          
+          folder_download_pointclouds <- "data_nl_pointclouds"
+          dir.create(folder_download_pointclouds)
+          pointclouds <- lapply(tiles_code_AHNSUB, function(x){
+            file_name <- paste0("AHN1_",x,".LAZ")
+            url_download <- paste0("https://geotiles.nl/AHN1_T/",x,".LAZ")
+            GET(url_download, write_disk(file.path(folder_download_pointclouds,file_name),overwrite = TRUE))
+          }
+          )
+          
+          las_data <- lidR::readLAS(paste0(folder_download_pointclouds,"/AHN1_",tiles_code_AHNSUB,".LAZ"))
+          
+          tree_data <- suppressMessages(
+            invisible(
+              lidR::locate_trees(
+                las_data,
+                invisible(
+                  lidR::lmf(hmin = 10, ws = 30)))))
+          
+          # Transforming trees into the same CRS 
+          
+          tree_data|> st_transform(st_crs(cropped_data))-> tree_data
+          
+          # Filtering out trees outside the area of study
+          
+          cropped_data_polygon <- st_as_sfc(st_bbox(cropped_data))
+          trees_on_area <- st_filter(tree_data,cropped_data_polygon, dist=3)
+          
+          trees_on_area|> st_transform(st_crs(city_buildings_aoi))-> trees_on_area
+          
+          # "Planting" all trees in your city
+          
+          valid_buildings <- city_buildings |> st_make_valid()
+          
+          # Remove 
+          
+          f <- lengths(st_intersects(trees_on_area,valid_buildings,sparse = TRUE))==0
+          
+          trees_to_plant <- trees_on_area[f,]
+          
+          for(i in 1:nrow(trees_to_plant)) {
+            tree_coord = st_coordinates(trees_to_plant$geometry[i])
+            if(tree_coord[3] < 400){
+              try(
+                render_tree(lat=tree_coord[2], long = tree_coord[1],
+                            extent = raster::extent(cropped_data),
+                            heightmap = elevation_matrix,
+                            canopy_height = tree_coord[3],
+                            zscale=1,
+                            type = "cone",
+                            canopy_width_ratio = 0.4,
+                            min_height = 3, baseshape = "rectangle", angle = c(0,0,0)), silent = TRUE)
+            }
+          }
+          
+          rglwidget()
+          
+```
+
+## From R to VR (1)
+
+-   Export to `OBJ` file.
+
+```{r}
+          #| echo: true
+          #| code-fold: true
+          
+          rayshader::save_obj("my_virtual_city")
+```
+
+-   Export to `glTF`. One open source option is to use [3dviewer.net](https://3dviewer.net/)
+
+## From R to VR (2)
+
+-   Create an [A-frame](https://aframe.io/) virtual environment.
+
+```{html}
+#| code-fold: true
+#| echo: true
+          
+          <!DOCTYPE html>
+            <html>
+            <head>
+            <meta charset="utf-8">
+            <title>glTF Model</title>
+            <meta name="description" content="glTF Model - A-Frame">
+            <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+            </head>
+            <body>
+            <a-scene>
+            <a-sky color="#99c1f1"></a-sky>
+            <a-assets>
+            <a-asset-item id="cityModel" src="model.gltf"></a-asset-item>
+            </a-assets>
+            <a-entity gltf-model="#cityModel"></a-entity>
+            <a-light type="ambient"></a-light>
+            <a-light type="directional" position="20 100 0" intensity="2.0"></a-light>
+            <a-light type="directional" position="40 100 0" intensity="2.0"></a-light>
+            <a-camera position="37 6 46">
+            </a-camera>
+            </a-scene>
+            </body>
+            </html>
+            
+```
+
+## From R to VR (3)
+
+```{=html}
+          <iframe width="100%" height="80%" src="https://heathered-loud-stay.glitch.me/" title="Quarto Documentation"></iframe>
+```
+## Relevant resources:
+
+-   [Publieke Dienstverlening Op de Kaart (PDOK)](https://www.pdok.nl/)
+-   [vizualism](https://www.vizualism.nl/)
+-   [The New York Times](https://rd.nytimes.com/)
