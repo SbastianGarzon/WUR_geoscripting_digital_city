@@ -11,7 +11,8 @@
 		"vscode": {
 			"extensions": [
 				"quarto.quarto",
-				"REditorSupport.r"
+				"REditorSupport.r",
+				"ionutvmi.path-autocomplete"
 			]
 		}
 	}
