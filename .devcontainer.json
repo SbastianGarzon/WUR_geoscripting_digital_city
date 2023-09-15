@@ -10,7 +10,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"quarto.quarto"
+				"quarto.quarto",
+				"REditorSupport.r"
 			]
 		}
 	}
@@ -30,3 +31,4 @@
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
+
